@@ -145,18 +145,70 @@ swiper-slide img {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 890px) {
   .container {
-    height: 110vh;
+   width: 90%;
+   height: 90vh;
     display: flex;
     flex-direction: column;
   }
 .img-section{
+    /* margin-top: 100px; */
     width: 90%;
+    height: 500px;
 }
 
 .description{
     width: 90%;
 }
+
+}
+@media only screen and (max-width: 768px) {
+  .container {
+   width: 90%;
+   height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+.img-section{
+    /* margin-top: 50px; */
+    width: 90%;
+    /* height: 500px; */
+}
+
+.description{
+    width: 90%;
+}
+
+}
+@media only screen and (max-width: 450px) {
+  .container {
+   width: 90%;
+   height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+.img-section{
+    /* margin-top: 50px; */
+    width: 90%;
+    /* height: 500px; */
+}
+
+.description{
+    width: 90%;
+}
+
+.descr-container{
+    font-size: 13px;
+}
+
+.title h2, .product h3 .storage{
+    font-size: 20px;
+}
+
+.btn-size{
+    margin: 10px 0 10px 0;
+}
+
 
 }
