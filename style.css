@@ -7,27 +7,25 @@
 .main {
   width: 100%;
   height: 100vh;
-  background-color: rgb(246, 237, 225);
+  background-color: rgb(251, 249, 247);
   display: flex;
 }
 .container {
-  background-color: rgb(241, 235, 227);
-  width: 1200px;
+  background-color: #fff;
+  width: 80%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border: solid white;
   border-radius: 15px;
   margin: 50px auto;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: -4px 10px 15px 7px rgba(0,0,0,0.1);
+  gap: 2.5rem;
 }
 .img-section {
-  margin-bottom: 5em;
+  width: 40%;
+  margin-left: 20px;
 }
 .description {
   display: flex;
@@ -35,61 +33,162 @@
   flex-direction: column;
   font-family: serif;
   flex-wrap: wrap;
+  width: 40%;
 }
 .title {
-  margin-bottom: 2em;
+  margin-bottom: 1rem;
 }
+
 .product {
   margin-bottom: 1em;
 }
 .product p {
-  font-size: 15px;
+
+  /* font-size: 1.2vw; */
   display: flex;
   line-height: 1.5rem;
-  padding-top: 15px;
+ 
+  max-width: 400px;
 }
-.product .storage{
-    font-weight: bold;
-    margin:10px auto;
+.product .storage {
+  font-weight: bold;
+  margin: 10px auto;
 }
-.product .btn-size{
-   list-style: none;
-   display: flex;
-   gap: 1.5rem;
+.product .btn-size {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
-.product .btn-size li{
-    border: solid 2px;
-    width: 60px;
-    height: 26px;
-    text-align: center;
-    background-color: white;
+.product .btn-size li {
+  /* border: solid 2px; */
+  width: 60px;
+  height: 26px;
+  text-align: center;
+  background-color: rgb(242, 240, 229);
+  border-radius: 5px;
 }
-.product .btn-size .active{
-    background-color: rgb(11, 133, 233);
+.product .btn-size .active {
+  background-color: rgb(32, 106, 216);
+  color: #fff;
+
 }
 
-.product .btn{
-    padding-top: 40px;
+.product .btn {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+.product .btn button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", sans-serif;
+  background-color: rgb(32, 106, 216);
+  color: #fff;
+  border-radius: 5px;
+}
+.product svg {
+  width: 20px;
+}
+.btn .price p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+/* ********************************** */
+/*!               swiper               */
+/* ********************************** */
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  /* display: sw </swiper-slidek; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper2 {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper2 swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+swiper-slide img {
+  /* display: sw </swiper-slidek; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width:900px) {
+  .container{
+    height: 140vh;
+    width: 80%;
     display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 10rem;
+    flex-direction: column;
+  }
+.img-section{
+    width: 60%;
+    height: 60%;
 }
-.product .btn button{
-    width: 150px;
-    height: 40px;
+swiper-slide img {
+    /* display: sw </swiper-slidek; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.description{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lucida Sans', sans-serif;
-    background-color:rgb(32, 106, 216) ;
-    color: #fff;
-}
-.product svg{
-    width: 20px;
-}
-.btn .price p{
-    /* border: solid; */
-    font-size: 35px;
-    font-weight: bold;
+    width: 70%;
+    height: 80%;
+    }
+ .product p{
+    
+ }
 }
