@@ -38,6 +38,7 @@
 .product {
   margin-top: 10px;
   margin-bottom: 5px;
+  font-family: ;
 }
 .product .storage{
   font-weight: bold;
@@ -70,8 +71,9 @@
 }
 
 .btn-size li:hover{
-  background: rgb(134, 134, 207);
+  background: blue;
   color: #fff;
+  transition: 0.5s;
 }
 
 .btn {
@@ -93,11 +95,13 @@
 }
 .btn button:hover{
   background-color: rgb(128, 128, 206);
+  transition: 0.5s;
 }
 
 .price p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* ********************************** */
