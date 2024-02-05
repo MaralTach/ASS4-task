@@ -269,6 +269,9 @@ swiper-slide img {
 .btn-size{
     margin: 10px 0 10px 0;
 }
-
+.btn button{
+  font-size: 10px;
+  white-space: nowrap;
+}
 
 }
