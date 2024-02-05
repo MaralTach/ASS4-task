@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .container {
@@ -28,10 +31,17 @@
 .description {
   width: 45%;
 }
+.description .title {
+  font-family: 'Roboto Slab', serif;
+}
 
 .product {
   margin-top: 10px;
   margin-bottom: 5px;
+}
+.product .storage{
+  font-weight: bold;
+  margin: 10px auto;
 }
 
 .btn-size {
@@ -46,13 +56,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(224, 222, 219);
+  border-radius: 5px;
+  padding:0 4px;
 }
 
-.active {
+.btn-size .active {
   height: 30px;
   width: 40px;
   background: blue;
   border-radius: 5px;
+  color: #fff;
+}
+
+.btn-size li:hover{
+  background: rgb(134, 134, 207);
   color: #fff;
 }
 
@@ -72,6 +90,9 @@
   color: #fff;
   border: none;
   border-radius: 15px;
+}
+.btn button:hover{
+  background-color: rgb(128, 128, 206);
 }
 
 .price p {
@@ -153,8 +174,8 @@ swiper-slide img {
   }
 .img-section{
     /* margin-top: 100px; */
-    width: 90%;
-    height: 500px;
+    width: 80%;
+    height: 450px;
 }
 
 .description{
@@ -180,6 +201,8 @@ swiper-slide img {
 }
 
 }
+
+
 @media only screen and (max-width: 450px) {
   .container {
    width: 90%;
@@ -199,6 +222,40 @@ swiper-slide img {
 
 .descr-container{
     font-size: 13px;
+}
+
+.title h2, .product h3 .storage{
+    font-size: 20px;
+}
+
+.btn-size{
+    margin: 10px 0 10px 0;
+}
+
+
+}
+@media only screen and (max-width: 390px) {
+
+  .container {
+   width: 90%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+  }
+.img-section{
+    /* margin-top: 50px; */
+    width: 70%;
+    height: 50vh;
+   object-fit: cover;
+}
+
+.description{
+    width: 80%;
+    font-size: 10px;
+}
+
+.descr-container{
+    font-size: 11px;
 }
 
 .title h2, .product h3 .storage{
