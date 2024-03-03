@@ -38,7 +38,7 @@
 .product {
   margin-top: 10px;
   margin-bottom: 5px;
-  font-family: ;
+  
 }
 .product .storage{
   font-weight: bold;
@@ -101,7 +101,7 @@
 .price p {
   font-size: 30px;
   font-weight: 900;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 /* ********************************** */
@@ -174,7 +174,7 @@ swiper-slide img {
    width: 90%;
    height: 90vh;
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
   }
 .img-section{
     /* margin-top: 100px; */
